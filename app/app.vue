@@ -8,6 +8,9 @@
         backgroundAttachment: 'cover',
       }"
     >
+      <!-- Dark overlay for better text visibility -->
+      <div class="absolute inset-0 bg-black/40"></div>
+
       <div class="relative z-10 bg-transparent container mx-auto px-5 py-12">
         <div class="text-center">
           <div class="flex justify-center mb-4">
