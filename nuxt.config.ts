@@ -34,8 +34,6 @@ export default defineNuxtConfig({
       ],
     },
     workbox: {
-      navigateFallback: "/",
-      navigateFallbackDenylist: [/^\/api\//, /\.[^/]+$/],
       cleanupOutdatedCaches: true,
       skipWaiting: true,
     },
