@@ -34,19 +34,10 @@ export default defineNuxtConfig({
       ],
     },
     workbox: {
-      navigateFallback: "/index.html",
-      navigateFallbackDenylist: [/^\/api\//],
+      navigateFallback: "/",
+      navigateFallbackDenylist: [/^\/api\//, /\.[^/]+$/],
       cleanupOutdatedCaches: true,
       skipWaiting: true,
-      runtimeCaching: [
-        {
-          urlPattern: /^.*\.(?:html|json)$/,
-          handler: "StaleWhileRevalidate",
-          options: {
-            cacheName: "html-cache",
-          },
-        },
-      ],
     },
   },
 });

@@ -144,7 +144,7 @@
 
     <!-- Footer -->
     <footer class="bg-gray-900 text-gray-400 text-center py-6 mt-12">
-      <p>© 2026 تطبيق قائمة التحقق</p>
+      <p>© {{ currentYear }} تطبيق قائمة التحقق</p>
     </footer>
   </div>
 </template>
@@ -229,7 +229,7 @@ const pendingItems = computed(() => data.value.filter((item) => !item.isDone));
 const completedItems = computed(() => data.value.filter((item) => item.isDone));
 const pendingCount = computed(() => pendingItems.value.length);
 const completedCount = computed(() => completedItems.value.length);
-
+const currentYear = new Date().getFullYear();
 onMounted(() => {
   const savedData = localStorage.getItem("data");
   if (savedData) {
