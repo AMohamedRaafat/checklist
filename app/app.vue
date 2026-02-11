@@ -17,10 +17,8 @@
               class="h-24 w-24 object-contain drop-shadow-lg"
             />
           </div>
-          <h1 class="text-5xl font-bold mb-3 drop-shadow-lg text-white">
-            مسوغات التعيين
-          </h1>
-          <p class="text-white text-lg drop-shadow">
+          <h1 class="text-5xl font-bold mb-3 drop-shadow-lg">مسوغات التعيين</h1>
+          <p class="text-lg drop-shadow">
             قائمة التحقق الشاملة لتعيين شركة نقلة
           </p>
         </div>
